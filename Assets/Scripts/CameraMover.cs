@@ -30,7 +30,7 @@ public class CameraMover : MonoBehaviour
         if (!_game.IsPlay || _lastCount == _player.CubesCount)
             return;
         float count = _player.CubesCount - _lastCount;
-        _position.localPosition += new Vector3(0, count / 4, -count / 4);
+        _position.localPosition += new Vector3(0, count / 2, -count / 2);
         _lastCount = _player.CubesCount;     
     }
 }
